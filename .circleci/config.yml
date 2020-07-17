@@ -20,7 +20,9 @@ jobs: # a basic unit of work in a run
       - store_artifacts: # store this build output. Read more: https://circleci.com/docs/2.0/artifacts/
           path: app.zip
           destination: app
+workflows:
+  # Name the workflow "welcome"
   welcome:
-    # Run the welcome/run job in its own container
+    # Run the welcome/run job in its own cont
     jobs:
       - build
